@@ -27,6 +27,8 @@ public class StoryInfoBean {
     public List<LikeInfoBean> likes;
     public List<CommentInfoBean> comment;
     public int share;
+    public int likeCount;
+    public int commentCount;
     //public String comment;
     public String create_time;
 }

@@ -51,7 +51,7 @@ public class FileController {
 //    String imagePath = "D:\\Tomcat 9.0\\webapps\\images\\";
 //    String imageUrl = "http://192.168.0.105:8081/images/";
     String imagePath = "C:\\inetpub\\wwwroot\\images\\";
-    String imageUrl = "http://sw.joyvc.com/images/";
+    String imageUrl = "http://www.joysw.com/images/";
 
     @ResponseBody
     @RequestMapping(value = "api/file/upload", method = RequestMethod.POST)

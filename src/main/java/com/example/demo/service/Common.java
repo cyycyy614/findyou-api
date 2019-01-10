@@ -255,13 +255,15 @@ public class Common {
                 //item.type = list.get(i).getInt(0);
                 item.content = list.get(i).getString(3);
                 item.images = list.get(i).getString(4);
-                item.likes = JsonUtils.convert_array(list.get(i).getString(5), StoryInfoBean.LikeInfoBean.class);
+                item.likeCount = list.get(i).getInt(5);
+//                item.likes = JsonUtils.convert_array(list.get(i).getString(5), StoryInfoBean.LikeInfoBean.class);
                 item.share = list.get(i).getInt(6);
-                item.comment = JsonUtils.convert_array(list.get(i).getString(7),CommentInfoBean.class);
+//                item.commentCount = JsonUtils.convert_array(list.get(i).getString(7),CommentInfoBean.class);
+                item.commentCount = list.get(i).getInt(7);
                 item.create_time = list.get(i).getString(8);
-                item.nickname = list.get(i).getString(9);
-                item.headimage = list.get(i).getString(10);
-                //item.comment = getStoryCommentItems(item.id);
+                item.nickname = list.get(i).getString(10);
+                item.headimage = list.get(i).getString(11);
+                item.comment = getStoryCommentItems(item.id);
                 infos.add(item);
             }
         }
